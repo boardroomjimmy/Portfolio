@@ -1,2 +1,2 @@
 # Portfolio
-stuff !!!
+Just a place to put my projects.

@@ -1,0 +1,81 @@
+#include <iostream>
+/*
+This simple program,written in C++, calculates the discount
+and total price for t-shirts bought.
+*/
+using namespace std;
+
+int main()
+{
+    double tShirtprice = 10;
+    double disPrice, fullPrice, total;
+    int numTshirts;
+
+
+    cout << "Enter the amount of T-shirts you would like to buy: ";
+    cin >> numTshirts;
+
+
+    if (numTshirts >= 5 && numTshirts <= 10 )
+    {
+        fullPrice = tShirtprice * numTshirts;
+        disPrice = fullPrice * 0.05;
+        total = fullPrice - disPrice;
+
+        cout << numTshirts << " T-shirts @ $10 each = $" << fullPrice << endl;
+        cout << "Discount 10% = $" << disPrice << endl;
+        cout << "Total = $" << total << endl;
+        cout << "Thank you for your business !" << endl;
+    }
+
+    else if (numTshirts >= 11 && numTshirts <= 20)
+    {
+        fullPrice = tShirtprice * numTshirts;
+        disPrice = fullPrice * 0.10;
+        total = fullPrice - disPrice;
+
+
+        cout << numTshirts << " T-shirts @ $10 each = $" << fullPrice << endl;
+        cout << "Discount 10% = $" << disPrice << endl;
+        cout << "Total = $" << total << endl;
+        cout << "Thank you for your business !" << endl;
+    }
+
+    else if (numTshirts >= 21 && numTshirts <= 30)
+    {
+        fullPrice = tShirtprice * numTshirts;
+        disPrice = fullPrice * 0.15;
+        total = fullPrice - disPrice;
+
+        cout << numTshirts << " T-shirts @ $15 each = $" << fullPrice << endl;
+        cout << "Discount 15% = $" << disPrice << endl;
+        cout << "Total = $" << total << endl;
+        cout << "Thank you for your business !" << endl;
+    }
+
+    else if (numTshirts >= 31)
+    {
+        fullPrice = tShirtprice * numTshirts;
+        disPrice = fullPrice * 0.20;
+        total = fullPrice - disPrice;
+
+        cout << numTshirts << " T-shirts @ $10 each = $" << fullPrice << endl;
+        cout << "Discount 20% = $" << disPrice << endl;
+        cout << "Total = $" << total << endl;
+        cout << "Thank you for your business !" << endl;
+
+    }
+
+    else if (numTshirts < 5)
+    {
+        fullPrice = tShirtprice * numTshirts;
+
+        cout << numTshirts << " T-shirts @ $10 each = $" << fullPrice << endl;
+        cout << "Total = $" << fullPrice << endl;
+        cout << "Thank you for your business !" << endl;
+
+    }
+
+
+    return 0;
+}
